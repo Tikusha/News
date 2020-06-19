@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="News" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AAc-lu-ItG">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="152" id="hdy-sH-Dr2" customClass="NewsFeedItemTableViewCell" customModule="News" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="152"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hdy-sH-Dr2" id="8ch-i2-OOz">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="152"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1" translatesAutoresizingMaskIntoConstraints="NO" id="Xgy-8P-egW">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="152"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="პანდემიის დროს ყვავილები აღარ იყიდება" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5P-eN-zkj">
+                                                    <rect key="frame" x="20" y="8" width="374" height="21"/>
+                                                    <color key="backgroundColor" red="0.69803921568627447" green="0.0039215686274509803" blue="0.41960784313725491" alpha="0.31811857876712329" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="პანდემია 2020" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahT-Cx-VVV">
+                                                    <rect key="frame" x="20" y="123" width="374" height="21"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.19951305650684931" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Xgy-8P-egW" firstAttribute="top" secondItem="8ch-i2-OOz" secondAttribute="top" id="Ct1-jj-wQI"/>
+                                                <constraint firstAttribute="trailing" secondItem="H5P-eN-zkj" secondAttribute="trailing" constant="20" id="EZb-5s-fCA"/>
+                                                <constraint firstItem="Xgy-8P-egW" firstAttribute="leading" secondItem="8ch-i2-OOz" secondAttribute="leading" id="FyL-kF-nEE"/>
+                                                <constraint firstAttribute="bottom" secondItem="Xgy-8P-egW" secondAttribute="bottom" id="NdN-xi-NBx"/>
+                                                <constraint firstItem="ahT-Cx-VVV" firstAttribute="leading" secondItem="8ch-i2-OOz" secondAttribute="leading" constant="20" id="Wa2-3d-Rec"/>
+                                                <constraint firstAttribute="trailing" secondItem="ahT-Cx-VVV" secondAttribute="trailing" constant="20" id="jOk-CO-6c9"/>
+                                                <constraint firstAttribute="trailing" secondItem="Xgy-8P-egW" secondAttribute="trailing" id="kJX-Hx-F5V"/>
+                                                <constraint firstAttribute="bottom" secondItem="ahT-Cx-VVV" secondAttribute="bottom" constant="8" id="rw4-gF-S0E"/>
+                                                <constraint firstItem="H5P-eN-zkj" firstAttribute="leading" secondItem="8ch-i2-OOz" secondAttribute="leading" constant="20" id="uF0-Q4-mR7"/>
+                                                <constraint firstItem="H5P-eN-zkj" firstAttribute="top" secondItem="8ch-i2-OOz" secondAttribute="top" constant="8" id="uJa-EC-peN"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="author" destination="ahT-Cx-VVV" id="P1p-hg-k6l"/>
+                                            <outlet property="imageNew" destination="Xgy-8P-egW" id="5AN-Iv-JQE"/>
+                                            <outlet property="title" destination="H5P-eN-zkj" id="as5-Zu-vvc"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="AAc-lu-ItG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7cz-wY-FUu"/>
+                            <constraint firstItem="AAc-lu-ItG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ag8-79-BP7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AAc-lu-ItG" secondAttribute="bottom" id="fOo-zF-rFj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AAc-lu-ItG" secondAttribute="trailing" id="y0L-RG-cQz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="AAc-lu-ItG" id="2UP-8l-5oC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-52" y="107"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image1" width="640" height="636"/>
+    </resources>
+</document>
